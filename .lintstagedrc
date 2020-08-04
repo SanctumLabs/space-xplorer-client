@@ -1,0 +1,11 @@
+{
+    "*.{js,jsx,ts,tsx}": [
+        "eslint --fix"
+    ],
+    "*.{scss}": [
+        "stylelint 'src/**/*.{scss}' --fix"
+    ],
+    "*.{png,jpeg,jpg,gif,svg}": [
+        "imagemin-lint-staged"
+    ]
+}
