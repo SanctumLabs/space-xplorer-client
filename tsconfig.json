@@ -6,6 +6,17 @@
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": "src",
+    "paths": {
+      "@storage/*": ["storage/*"],
+      "@cache": ["storage/cache/cache.ts"],
+      "@localStorage": ["storage/local/local.ts"],
+      "@gqlClient": ["api/gql/GqlClient.ts"],
+      "@restClient": ["api/rest/RestClient.ts"],
+      "@schemas": ["api/gql/schemas.ts"],
+      "@components/*": ["components/*"],
+      "@styles": ["styles.js"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

@@ -33,7 +33,6 @@ module.exports = {
     },
     plugins: [
         'react',
-        'cypress',
         'import',
         'prettier',
         'react-hooks',
