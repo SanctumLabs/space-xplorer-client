@@ -2,12 +2,30 @@
   "name": "@wyvarn/space-xpolorer-client",
   "private": false,
   "description": "Space Xplorer Client",
-  "main": "server.js",
   "version": "1.0.0",
   "repository": "git@github.com:Wyvarn/space-xplorer-client.git",
   "author": "BrianLusina <12752833+BrianLusina@users.noreply.github.com>",
   "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "react-scripts": "3.4.3",
+    "typescript": "~3.7.2"
+  },
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "husky": {
     "hooks": {
