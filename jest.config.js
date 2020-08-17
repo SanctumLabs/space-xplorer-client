@@ -1,20 +1,31 @@
 module.exports = {
-    runner: 'tsc',
-    testEnvironment: 'node',
+    testEnvironment: "jest-environment-jsdom-fourteen",
     displayName: {
-        name: 'CalamusApi',
+        name: 'SpaceXplorerClient',
         color: 'yellow',
     },
-    moduleFileExtensions: ['ts', 'js'],
-    preset: '@shelf/jest-mongodb',
-    // testEnvironment: "node",
+    roots: [
+        "<rootDir>/src"
+    ],
+    moduleFileExtensions: [
+        "web.js",
+        "js",
+        "web.ts",
+        "ts",
+        "web.tsx",
+        "tsx",
+        "json",
+        "web.jsx",
+        "jsx",
+        "node"],
     testMatch: [
         '<rootDir>/__tests__/**/*.{js,ts,tsx,jsx,mjs}',
         '<rootDir>/?(*.)(spec|test).{js,jsx,ts,tsx,mjs}',
         '<rootDir>/src/**/__tests__/**/*.{js,ts,tsx,jsx,mjs}',
         '<rootDir>/src/**/?(*.)(spec|test).{js,ts,tsx,jsx,mjs}',
     ],
-    setupFiles: ['<rootDir>/scripts/setup-tests.ts'],
+    setupFiles: ['react-app-polyfill/jsdom'],
+    setupFilesAfterEnv: ['<rootDir>/scripts/setup-tests.ts'],
     collectCoverageFrom: ['<rootDir>/src/**/*.ts', '!**/node_modules/**'],
     coveragePathIgnorePatterns: [
         '/node_modules/',
@@ -47,8 +58,17 @@ module.exports = {
     // },
     transform: {
         '^.+\\.ts$': 'ts-jest',
+        "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+        "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+        "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
+    transformIgnorePatterns: [
+        "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",
+        "^.+\\.module\\.(css|sass|scss)$"
+    ],
     moduleNameMapper: {
+        "^react-native$": "react-native-web",
+        "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
         '^@app': '<rootDir>/src/app.ts',
         '^@config': '<rootDir>/src/config.ts',
         '^@database': '<rootDir>/src/database',
@@ -65,4 +85,8 @@ module.exports = {
         '^@utils/(.*)$': '<rootDir>/src/utils/$1',
         'app-request': '<rootDir>/src/types/app-request.d.ts',
     },
+    watchPlugins: [
+        "jest-watch-typeahead/filename",
+        "jest-watch-typeahead/testname"
+    ]
 };
