@@ -66,6 +66,7 @@
     "http-server": "^0.12.3",
     "husky": "^4.2.5",
     "identity-obj-proxy": "3.0.0",
+    "imagemin-lint-staged": "^0.4.0",
     "jest": "24.9.0",
     "jest-environment-jsdom-fourteen": "1.0.1",
     "jest-resolve": "24.9.0",
@@ -113,7 +114,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "npm test",
+      "pre-push": "npm test:cover",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
