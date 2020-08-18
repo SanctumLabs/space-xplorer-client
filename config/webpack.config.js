@@ -296,10 +296,13 @@ module.exports = function(webpackEnv) {
         "@cache": path.resolve("src/storage/cache/cache.ts"),
         "@localStorage": path.resolve("src/storage/local/local.ts"),
         "@gqlClient": path.resolve("src/api/gql/GqlClient.ts"),
+        "@gqlOps": path.resolve("src/api/gql/__generated__/"),
         "@restClient": path.resolve("src/api/rest/RestClient.ts"),
         "@schemas": path.resolve("src/api/gql/schemas.ts"),
         "@components": path.resolve("src/components/"),
-        "@styles": path.resolve("src/styles.js"),
+        "@containers": path.resolve("src/containers/"),
+        "@assets": path.resolve("src/assets/"),
+        "@styles": path.resolve("src/styles.ts"),
         // Allows for better profiling with ReactDevTools
         ...(isEnvProductionProfile && {
           'react-dom$': 'react-dom/profiling',
