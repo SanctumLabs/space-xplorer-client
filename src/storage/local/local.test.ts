@@ -6,7 +6,7 @@ import {
   clearAll,
   hasStoredItems,
   isLocalStorageSupported,
-} from './localStorageService';
+} from './local';
 
 describe('LocalStorage', () => {
   beforeEach(() => {

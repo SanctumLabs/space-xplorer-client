@@ -28,14 +28,14 @@ export default class LoginForm extends Component<Props, State> {
     };
   }
 
-  onChange = (event: ChangeEvent<HTMLInputElement>) => {
+  onChange = (event: ChangeEvent<HTMLInputElement>): void => {
     const email = (event.target as HTMLInputElement).value;
     this.setState({ email });
   };
 
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type,@typescript-eslint/ban-ts-ignore
   // @ts-ignore
-  onSubmit = (event) => {
+  onSubmit = (event): void => {
     const { email } = this.state;
     const { handleLogin } = this.props;
 
@@ -51,7 +51,7 @@ export default class LoginForm extends Component<Props, State> {
           <StyledLogo />
         </Header>
         <StyledRocket />
-        <Heading>Space Explorer</Heading>
+        <Heading>Space Xplorer</Heading>
         <StyledForm onSubmit={this.onSubmit}>
           <StyledInput
             required
