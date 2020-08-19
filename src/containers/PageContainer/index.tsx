@@ -2,11 +2,11 @@ import React, { ReactNode } from 'react';
 import { Bar, Container } from './styles';
 
 interface Props {
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export default function Index(props: Props) {
-    const { children } = props
+  const { children } = props;
   return (
     <>
       <Bar />

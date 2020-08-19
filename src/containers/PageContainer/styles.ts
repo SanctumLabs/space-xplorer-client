@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { unit, colors } from 'styles';
+import { unit, colors } from '@styles';
 
 export const Bar = styled('div')({
   flexShrink: 0,

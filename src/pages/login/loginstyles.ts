@@ -2,10 +2,10 @@
 import styled from '@emotion/styled';
 import { css } from 'emotion';
 import { colors, unit } from '@styles';
-import space from 'assets/images/space.jpg';
-import { ReactComponent as Logo } from 'assets/logo.svg';
-import { ReactComponent as Curve } from 'assets/curve.svg';
-import { ReactComponent as Rocket } from 'assets/rocket.svg';
+import space from '@assets/images/space.jpg';
+import { ReactComponent as Logo } from '@assets/logo.svg';
+import { ReactComponent as Curve } from '@assets/curve.svg';
+import { ReactComponent as Rocket } from '@assets/rocket.svg';
 import { size } from 'polished';
 
 export const Container = styled('div')({

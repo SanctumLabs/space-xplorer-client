@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { lighten } from 'polished';
-import { unit, colors } from 'styles';
+import { unit, colors } from '@styles';
 
 const height = 50;
 export default styled('button')({

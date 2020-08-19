@@ -2,8 +2,8 @@
 import styled from '@emotion/styled';
 import { keyframes } from 'emotion';
 import { size } from 'polished';
-import { colors } from 'styles';
-import { ReactComponent as Logo } from 'assets/logo.svg';
+import { colors } from '@styles';
+import { ReactComponent as Logo } from '@assets/logo.svg';
 
 const spin = keyframes`
   to {
