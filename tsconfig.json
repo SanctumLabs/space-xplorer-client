@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@storage/*": ["storage/*"],
+      "@cache": ["storage/cache/cache.ts"],
+      "@localStorage": ["storage/local/local.ts"],
+      "@gqlClient": ["api/gql/GqlClient.ts"],
+      "@gqlOps/*": ["api/gql/__generated__/*"],
+      "@restClient": ["api/rest/RestClient.ts"],
+      "@schemas": ["api/gql/schemas.ts"],
+      "@components/*": ["components/*"],
+      "@containers/*": ["containers/*"],
+      "@assets/*": ["assets/*"],
+      "@styles": ["styles.js"]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
+  },
+  "include": [
+    "src"
+  ]
+}
