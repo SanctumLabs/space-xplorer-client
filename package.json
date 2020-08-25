@@ -103,7 +103,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "codegen": "apollo client:codegen --target typescript --watch",
-    "test": "node scripts/test.js --updateSnapshot",
+    "test": "node scripts/test.js --runInBand --updateSnapshot",
     "test:cover": "npm test -- --coverage --watchAll=false",
     "run:ios-demo": "npx artillery run apollo-internal-demos/ios-workload.yml",
     "run:android-demo": "npx artillery run apollo-internal-demos/android-workload.yml",

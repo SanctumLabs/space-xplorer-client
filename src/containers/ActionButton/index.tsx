@@ -2,11 +2,11 @@
 /* eslint-disable @typescript-eslint/camelcase */
 
 import React, { FC, useState } from 'react';
-import { gql, useMutation, Reference } from '@apollo/client';
+import { useMutation, Reference } from '@apollo/client';
 import Button from '@components/button';
 import { cartItemsVar } from '@cache';
 import * as LaunchDetailTypes from '@gqlOps/LaunchDetails';
-import { CANCEL_TRIP } from '@schemas';
+import { CANCEL_TRIP, REMOVE_LAUNCH } from '@schemas';
 import { readRecord } from '@localStorage';
 
 type Props = Partial<LaunchDetailTypes.LaunchDetails_launch>;
@@ -25,11 +25,7 @@ const CancelTripButton: FC<Props> = ({ id }: Props) => {
           trips(existingTrips) {
             const launchRef = cache.writeFragment({
               data: launch,
-              fragment: gql`
-                fragment RemoveLaunch on Launch {
-                  id
-                }
-              `,
+              fragment: REMOVE_LAUNCH,
             });
             return existingTrips.filter((tripRef: Reference) => tripRef === launchRef);
           },

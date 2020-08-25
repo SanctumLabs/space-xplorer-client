@@ -14,6 +14,9 @@ export interface Login_login {
 }
 
 export interface Login {
+  /**
+   * Logs in a user & returns their token
+   */
   login: Login_login;
 }
 

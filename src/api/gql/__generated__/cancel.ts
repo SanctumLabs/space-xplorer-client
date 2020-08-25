@@ -21,6 +21,9 @@ export interface cancel_cancelTrip {
 }
 
 export interface cancel {
+  /**
+   * Users can cancel trips that they have booked by providing the launch ID
+   */
   cancelTrip: cancel_cancelTrip;
 }
 
