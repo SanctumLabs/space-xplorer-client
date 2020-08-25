@@ -87,6 +87,7 @@ function getClientEnvironment(publicUrl) {
         WDS_SOCKET_PORT: process.env.WDS_SOCKET_PORT,
         APOLLO_KEY: process.env.APOLLO_KEY,
         API_URL: process.env.API_URL,
+        SENTRY_DSN: process.env.SENTRY_DSN,
       }
     );
   // Stringify all values so we can feed into webpack DefinePlugin
