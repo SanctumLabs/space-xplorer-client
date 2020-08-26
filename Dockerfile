@@ -1,19 +1,36 @@
-FROM node:13
+FROM node:alpine as builder
 
-# setting working directory in the container
+RUN apk add --update \
+    bash \
+    lcms2-dev \
+    libpng-dev \
+    gcc \
+    g++ \
+    make \
+    autoconf \
+    automake \
+  && rm -rf /var/cache/apk/*
+
+COPY . .
+
+RUN npm install
+RUN npm run build
+
+FROM node:14.4-alpine3.12
+
+ENV PM2_HOME /usr/src/app/.pm2
+
 WORKDIR /usr/src/app
 
-# grant permission of node project directory to node user
-COPY build/server.js server.js
-COPY keys keys
-COPY package.json package.json
-COPY ecosystem.config.js ecosystem.config.js
+RUN mkdir /usr/src/app/.pm2
+RUN chmod -R 777 /usr/src/app
+RUN chmod -R 777 /usr/src/app/.pm2
 
-RUN npm install --production
+COPY --from=builder build build
+COPY --from=builder server .
+
+RUN npm install --quiet --no-optional
 RUN npm install pm2 -g
 
-# container exposed network port number
-EXPOSE 3000
-
-# command to run within the container
-CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
+EXPOSE 8080
+CMD ["pm2-runtime", "start", "ecosystem.config.js", "--only", "space-xplorer-client"]

@@ -3,7 +3,7 @@ name: Space Xplorer Client Docker Image Build
 
 on:
   push:
-    branches: [ main, beta, develop ]
+    branches: [ master, beta, develop ]
 
 jobs:
   push_to_registry:
@@ -14,12 +14,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Push to GitHub Packages
+      - name: Push Server Image GitHub Packages
         uses: docker/build-push-action@v1
         with:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: wyvarn/space-xplorer-client/space-xplorer-client
+          repository: wyvarn/space-xplorer-client/space-xplorer-client-node
           dockerfile: "Dockerfile"
+          tag_with_ref: true
+
+      - name: Push Static Image to GitHub Packages
+        uses: docker/build-push-action@v1
+        with:
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          repository: wyvarn/space-xplorer-client/space-xplorer-client-static
+          dockerfile: "Dockerfile.static"
           tag_with_ref: true

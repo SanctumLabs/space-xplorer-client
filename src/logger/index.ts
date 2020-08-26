@@ -18,7 +18,8 @@ export const initializeLogger = (): void => {
     (location.protocol === 'https' || location.protocol === 'https:')
   ) {
     Sentry.init({
-      dsn: process.env.SENTRY_DSN,
+      // eslint-disable-next-line no-underscore-dangle
+      dsn: process.env.SENTRY_DSN || window._env_.SENTRY_DSN,
       integrations: [new Integrations.BrowserTracing()],
       tracesSampleRate: 1.0,
     });
