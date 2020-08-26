@@ -39,3 +39,16 @@ export const captureAndLogError = (error: Error, errorInfo: ErrorInfo): void => 
     Sentry.captureException(error);
   });
 };
+
+/**
+ * Capture exception
+ * @param {Error} error Error context
+ */
+export const captureException = (
+  error: Error,
+  scope?: Scope,
+  errorMessage = 'Error Caught',
+): void => {
+  Sentry.captureMessage(errorMessage, scope);
+  Sentry.captureException(error);
+};
