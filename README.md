@@ -1,10 +1,11 @@
 # Space Xplorer Client
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a79b4239716a4e92af44edfe05be7f28)](https://app.codacy.com/gh/Wyvarn/space-xplorer-client?utm_source=github.com&utm_medium=referral&utm_content=Wyvarn/space-xplorer-client&utm_campaign=Badge_Grade_Settings)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2ccaf6e7f5c340a89c31391094556e47)](https://www.codacy.com/gh/Wyvarn/space-xplorer-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Wyvarn/space-xplorer-client&amp;utm_campaign=Badge_Grade)
 ![Code scanning](https://github.com/Wyvarn/space-xplorer-client/workflows/Code%20scanning/badge.svg)
 ![NodeJS Package](https://github.com/Wyvarn/space-xplorer-client/workflows/NodeJS%20Package/badge.svg)
-![docker build](https://github.com/Wyvarn/space-xplorer-client/workflows/Space%20Xplorer%20Client%20docker%20image%20build/badge.svg)
 ![Github Release](https://github.com/Wyvarn/space-xplorer-client/workflows/Github%20Release/badge.svg)
+![Sentry Release](https://github.com/Wyvarn/space-xplorer-client/workflows/Sentry%20Release/badge.svg)
+![Space Xplorer Client Docker Image Build](https://github.com/Wyvarn/space-xplorer-client/workflows/Space%20Xplorer%20Client%20Docker%20Image%20Build/badge.svg)
 
 UI interface for allowing users to book seats on the next SpaceX launch
 
