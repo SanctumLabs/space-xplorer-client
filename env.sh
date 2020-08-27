@@ -15,22 +15,22 @@ else
   echo "env file $ENV_FILE does not exist. Using provided defaults"
   cp .env.example $ENV_FILE
 
-  if [ -z ${APOLLO_KEY} ]; then
+  if [ -z "${APOLLO_KEY}" ]; then
     echo "Missing Apollo Key Env"
   else
-    echo APOLLO_KEY=$APOLLO_KEY >> $ENV_FILE
+    echo APOLLO_KEY="$APOLLO_KEY" >> "$ENV_FILE"
   fi
 
-  if [ -z ${API_URL} ]; then
+  if [ -z "${API_URL}" ]; then
     echo "Missing API URL Env"
   else
-    echo API_URL=$API_URL >> $ENV_FILE
+    echo API_URL="$API_URL" >> "$ENV_FILE"
   fi
 
-  if [ -z ${SENTRY_DSN} ]; then
+  if [ -z "${SENTRY_DSN}" ]; then
     echo "Missing Sentry DSN"
   else
-    echo SENTRY_DSN=$SENTRY_DSN >> $ENV_FILE
+    echo SENTRY_DSN="$SENTRY_DSN" >> "$ENV_FILE"
   fi
 
 fi
