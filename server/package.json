@@ -1,0 +1,13 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Serve Space Xplorer Client",
+  "main": "app.js",
+  "author": "The Lusina",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.3"
+  }
+}
