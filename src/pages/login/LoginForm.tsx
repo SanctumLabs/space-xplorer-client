@@ -43,6 +43,7 @@ export default class LoginForm extends Component<Props, State> {
     handleLogin({ variables: { email } });
   };
 
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   render() {
     return (
       <Container>

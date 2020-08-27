@@ -2,7 +2,8 @@ import { ApolloClient, gql } from '@apollo/client';
 import cache from '@cache';
 import { readRecord } from '@localStorage';
 
-const apiUrl = process.env.API_URL;
+// eslint-disable-next-line no-underscore-dangle
+const apiUrl = process.env.API_URL || window._env_.API_URL;
 
 const typeDefs = gql`
   extend type Query {

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-ignore */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import React from 'react';
 import { Route, Redirect, RouteProps } from 'react-router-dom';
@@ -6,14 +7,14 @@ interface Props extends RouteProps {
   isAuthenticated: boolean;
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export default function PrivateRoute({ children, isAuthenticated, ...rest }: Props) {
+export default function PrivateRoute({ component: Component, isAuthenticated, ...rest }: Props) {
   return (
     <Route
       {...rest}
       render={({ location }) =>
         isAuthenticated ? (
-          children
+          // @ts-ignore
+          <Component />
         ) : (
           <Redirect
             to={{

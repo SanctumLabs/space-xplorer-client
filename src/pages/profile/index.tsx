@@ -23,7 +23,8 @@ const Profile: FC<Props> = () => {
       {data.me && data.me.trips.length ? (
         data.me.trips.map((launch: any) => <LaunchTile key={launch.id} launch={launch} />)
       ) : (
-        <p>You haven&apost booked any trips</p>
+        // eslint-disable-next-line react/no-unescaped-entities
+        <p>You haven't booked any trips</p>
       )}
     </>
   );

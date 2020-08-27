@@ -8,3 +8,5 @@ public/
 server/
 *.test.ts
 *.test.tsx
+env-config.js
+__generated__/globalTypes.ts

@@ -18,7 +18,8 @@
       "@components/*": ["components/*"],
       "@containers/*": ["containers/*"],
       "@assets/*": ["assets/*"],
-      "@styles": ["styles.js"]
+      "@styles": ["styles.ts"],
+      "@logger": ["logger/index.ts"]
     },
     "allowJs": true,
     "skipLibCheck": true,

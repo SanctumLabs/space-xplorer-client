@@ -303,6 +303,7 @@ module.exports = function(webpackEnv) {
         "@containers": path.resolve("src/containers/"),
         "@assets": path.resolve("src/assets/"),
         "@styles": path.resolve("src/styles.ts"),
+        "@logger": path.resolve("src/logger/index.ts"),
         // Allows for better profiling with ReactDevTools
         ...(isEnvProductionProfile && {
           'react-dom$': 'react-dom/profiling',

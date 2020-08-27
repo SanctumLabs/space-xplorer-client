@@ -68,7 +68,7 @@ module.exports = {
     '^@containers/(.*)$': '<rootDir>/src/containers/$1',
     '^@assets/(.*)$': '<rootDir>/src/assets/$1',
     '^@styles': '<rootDir>/src/styles.ts',
-    '^@logger': '<rootDir>/src/core/logger.ts',
+    '^@logger': '<rootDir>/src/logger/index.ts',
     '^@utils/(.*)$': '<rootDir>/src/utils/$1',
   },
   watchPlugins: ['jest-watch-typeahead/filename', 'jest-watch-typeahead/testname'],
