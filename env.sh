@@ -13,7 +13,26 @@ if [ -f $ENV_FILE ]; then
   echo "env file $ENV_FILE exists."
 else
   echo "env file $ENV_FILE does not exist. Using provided defaults"
-  cp .env.example .env
+  cp .env.example $ENV_FILE
+
+  if [ -z ${APOLLO_KEY} ]; then
+    echo "Missing Apollo Key Env"
+  else
+    echo APOLLO_KEY=$APOLLO_KEY >> $ENV_FILE
+  fi
+
+  if [ -z ${API_URL} ]; then
+    echo "Missing API URL Env"
+  else
+    echo API_URL=$API_URL >> $ENV_FILE
+  fi
+
+  if [ -z ${SENTRY_DSN} ]; then
+    echo "Missing Sentry DSN"
+  else
+    echo SENTRY_DSN=$SENTRY_DSN >> $ENV_FILE
+  fi
+
 fi
 
 # Add assignment
@@ -36,7 +55,7 @@ do
 
   # Append configuration property to JS file
   echo "  $varname: \"$value\"," >> ./env-config.js
-done < .env
+done < $ENV_FILE
 
 echo "}" >> ./env-config.js
 
@@ -57,11 +76,11 @@ echo "---Done---"
 #  echo "env file $ENV_FILE exists."
 #else
 #  echo "env file $ENV_FILE does not exist. Using provided default"
-#  cp .env.example .env
+#  cp .env.example $ENV_FILE
 #fi
 
 #echo "window._env_ = {" > ./env-config.js
-#awk -F '=' '{ print $1 ": \"" (ENVIRON[$1] ? ENVIRON[$1] : $2) "\"," }' ./.env >> ./env-config.js
+#awk -F '=' '{ print $1 ": \"" (ENVIRON[$1] ? ENVIRON[$1] : $2) "\"," }' ./$ENV_FILE >> ./env-config.js
 #echo "}" >> ./env-config.js
 
 #echo "---Done---"
