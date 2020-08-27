@@ -182,6 +182,14 @@ which has been baked into the build process when running a build. This is to all
 running in different contexts without triggering a new build in a pipeline. This is useful for cases when using Docker containers
 However, the normal build pipeline with a CI should already cater fo this.
 
+## Deployment
+
+Deploying the application depends on the environment available.
+
+1. If using Docker, there are already configured Dockerfiles that will allow building this application. [This](./Dockerfile) & [this](./Dockerfile.static)
+2. If deploying behind a Web Server such as Nginx, there are [config](./conf) files already available.
+3. If deploying to a static hosting site such as [Netlfy](https://www.netlify.com/), there is a [netlify toml](./netlify.toml) file already set & can be modified to suit ones needs
+
 ## Built With
 
 1. [JavaScript](https://www.javascript.com/) - Source language
