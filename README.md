@@ -2,7 +2,6 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2ccaf6e7f5c340a89c31391094556e47)](https://www.codacy.com/gh/Wyvarn/space-xplorer-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Wyvarn/space-xplorer-client&amp;utm_campaign=Badge_Grade)
 ![Code scanning](https://github.com/Wyvarn/space-xplorer-client/workflows/Code%20scanning/badge.svg)
-![NodeJS Package](https://github.com/Wyvarn/space-xplorer-client/workflows/NodeJS%20Package/badge.svg)
 ![Github Release](https://github.com/Wyvarn/space-xplorer-client/workflows/Github%20Release/badge.svg)
 ![Sentry Release](https://github.com/Wyvarn/space-xplorer-client/workflows/Sentry%20Release/badge.svg)
 ![Space Xplorer Client Docker Image Build](https://github.com/Wyvarn/space-xplorer-client/workflows/Space%20Xplorer%20Client%20Docker%20Image%20Build/badge.svg)
@@ -181,6 +180,14 @@ You will notice that this has been built to have dynamic Environment variables s
 which has been baked into the build process when running a build. This is to allow switching environment variables when
 running in different contexts without triggering a new build in a pipeline. This is useful for cases when using Docker containers
 However, the normal build pipeline with a CI should already cater fo this.
+
+## Deployment
+
+Deploying the application depends on the environment available.
+
+1. If using Docker, there are already configured Dockerfiles that will allow building this application. [This](./Dockerfile) & [this](./Dockerfile.static)
+2. If deploying behind a Web Server such as Nginx, there are [config](./conf) files already available.
+3. If deploying to a static hosting site such as [Netlfy](https://www.netlify.com/), there is a [netlify toml](./netlify.toml) file already set & can be modified to suit ones needs
 
 ## Built With
 
