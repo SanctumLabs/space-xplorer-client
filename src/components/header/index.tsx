@@ -12,7 +12,7 @@ const offset = 97; // letter A's charcode is 97
 const avatars = [dog1, dog2, dog3];
 const maxIndex = avatars.length - 1;
 
-function pickAvatarByEmail(email: string) {
+function pickAvatarByEmail(email: string): string {
   const charCode = email.toLowerCase().charCodeAt(0) - offset;
   const percentile = Math.max(0, Math.min(max, charCode)) / max;
   return avatars[Math.round(maxIndex * percentile)];

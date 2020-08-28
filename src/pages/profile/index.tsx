@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { FC } from 'react';
 import { useQuery } from '@apollo/client';
 import { GET_MY_TRIPS } from '@schemas';

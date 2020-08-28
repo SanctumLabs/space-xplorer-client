@@ -6,14 +6,15 @@ const cache: InMemoryCache = new InMemoryCache({
   typePolicies: {
     Query: {
       fields: {
-        isLoggedIn() {
+        isLoggedIn(): boolean {
           return isLoggedInVar();
         },
-        cartItems() {
+        cartItems(): string[] {
           return cartItemsVar();
         },
         launches: {
           keyArgs: false,
+          // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
           merge(existing, incoming) {
             let launches: Reference[] = [];
             if (existing && existing.launches) {

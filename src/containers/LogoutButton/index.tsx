@@ -11,7 +11,7 @@ const LogoutButton = () => {
   return (
     <StyledButton
       data-testid="logout-button"
-      onClick={() => {
+      onClick={(): void => {
         // Since we're logging out, remove all traces of the current user
         // from the cache. First use `cache.evict()` to remove the stored
         // `me` reference that was added to the cache by the `GET_MY_TRIPS`
