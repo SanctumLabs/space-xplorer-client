@@ -30,20 +30,21 @@ module.exports = {
   collectCoverageFrom: ['<rootDir>/src/**/*.ts', '!**/node_modules/**'],
   coveragePathIgnorePatterns: [
     '/node_modules/',
-    '<rootDir>/src/app.ts',
-    '<rootDir>/src/types',
-    '<rootDir>/src/config.ts',
-    '<rootDir>/src/core/logger.ts',
-    '<rootDir>/src/utils/',
-    '<rootDir>/src/api/gql/schema.ts',
+    '<rootDir>/src/api/gql/GqlClient.ts',
+    '<rootDir>/src/api/gql/schemas.ts',
+    '<rootDir>/src/serviceWorker.ts',
+    '<rootDir>/src/react-app-env.d.ts',
+    '<rootDir>/src/window.d.ts',
+    '<rootDir>/src/storage/cache/cache.ts',
+    '<rootDir>/src/logger/index.ts',
+    '<rootDir>/src/test-utils.tsx',
   ],
-  // TODO: setup coverageThreshold once bug on testing has been fixed
-  // coverageThreshold: {
-  //   global: {
-  //     lines: 90,
-  //     statements: 90,
-  //   },
-  // },
+  coverageThreshold: {
+    global: {
+      lines: 85,
+      statements: 85,
+    },
+  },
   transform: {
     '^.+\\.ts$': 'ts-jest',
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
