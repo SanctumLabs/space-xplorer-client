@@ -13,6 +13,7 @@ export const colors = {
 };
 
 // @ts-ignore
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 export default () =>
   injectGlobal({
     // @ts-ignore
