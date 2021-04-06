@@ -24,7 +24,7 @@ services:
       - cache:/data
 
   migrations:
-    image: wyvarn/space-xplorer-migrations:latest
+    image: sanctumlabs/space-xplorer-migrations:latest
     container_name: space-xplorer-migrations
     depends_on:
       - db
@@ -32,7 +32,7 @@ services:
       DATABASE_URL: postgresql://space-xplorer:space-xplorer@db:5432/space-xplorer?schema=public
 
   api:
-    image: wyvarn/space-xplorer-api:latest
+    image: sanctumlabs/space-xplorer-api:latest
     hostname: spacexplorer-api
     container_name: space-xplorer-api
     ports:
