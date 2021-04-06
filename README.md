@@ -1,12 +1,12 @@
 # Space Xplorer Client
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2ccaf6e7f5c340a89c31391094556e47)](https://www.codacy.com/gh/Wyvarn/space-xplorer-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Wyvarn/space-xplorer-client&amp;utm_campaign=Badge_Grade)
-![Code scanning](https://github.com/Wyvarn/space-xplorer-client/workflows/Code%20scanning/badge.svg)
-![Github Release](https://github.com/Wyvarn/space-xplorer-client/workflows/Github%20Release/badge.svg)
-![Sentry Release](https://github.com/Wyvarn/space-xplorer-client/workflows/Sentry%20Release/badge.svg)
-![Space Xplorer Client Docker Image Build](https://github.com/Wyvarn/space-xplorer-client/workflows/Space%20Xplorer%20Client%20Docker%20Image%20Build/badge.svg)
-![Tests](https://github.com/Wyvarn/space-xplorer-client/workflows/Tests/badge.svg)
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/2ccaf6e7f5c340a89c31391094556e47)](https://www.codacy.com/gh/Wyvarn/space-xplorer-client?utm_source=github.com&utm_medium=referral&utm_content=Wyvarn/space-xplorer-client&utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/2ccaf6e7f5c340a89c31391094556e47)](https://www.codacy.com/gh/SanctumLabs/space-xplorer-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SanctumLabs/space-xplorer-client&amp;utm_campaign=Badge_Grade)
+![Code scanning](https://github.com/SanctumLabs/space-xplorer-client/workflows/Code%20scanning/badge.svg)
+![Github Release](https://github.com/SanctumLabs/space-xplorer-client/workflows/Github%20Release/badge.svg)
+![Sentry Release](https://github.com/SanctumLabs/space-xplorer-client/workflows/Sentry%20Release/badge.svg)
+![Space Xplorer Client Docker Image Build](https://github.com/SanctumLabs/space-xplorer-client/workflows/Space%20Xplorer%20Client%20Docker%20Image%20Build/badge.svg)
+![Tests](https://github.com/SanctumLabs/space-xplorer-client/workflows/Tests/badge.svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/2ccaf6e7f5c340a89c31391094556e47)](https://www.codacy.com/gh/SanctumLabs/space-xplorer-client?utm_source=github.com&utm_medium=referral&utm_content=SanctumLabs/space-xplorer-client&utm_campaign=Badge_Coverage)
 
 UI interface for allowing users to book seats on the next SpaceX launch
 
