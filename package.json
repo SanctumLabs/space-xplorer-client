@@ -3,7 +3,7 @@
   "private": false,
   "description": "Space Xplorer Client",
   "version": "1.0.0",
-  "repository": "git@github.com:Wyvarn/space-xplorer-client.git",
+  "repository": "git@github.com:SanctumLabs/space-xplorer-client.git",
   "author": "BrianLusina <12752833+BrianLusina@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
