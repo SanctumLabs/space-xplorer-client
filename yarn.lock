@@ -3,9 +3,9 @@
 
 
 "@apollo/client@^3.1.3":
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.5.2.tgz#f0a4d8cb42f045e0527f081da9bb21c4fb53aeaf"
-  integrity sha512-STC7ZQthcOGU+MXRIzcb3s1ULW9QQFEhXFEIUaK3Jdwy0RxncxYkg2LpwxXV0FqlYUjKEW92f+NUIZ2FhpKGug==
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-3.5.4.tgz#a2c1c1c377c5ffb5822dd6269a741749b3ad5df3"
+  integrity sha512-6kybsXEdtRYGUDap4kOded6OFw501H+wL3/WGeRtO+NBcLfhuvRwkfCNpm0oTJWDDSxhQnWKCbxJgrLgoxCeFg==
   dependencies:
     "@graphql-typed-document-node/core" "^3.0.0"
     "@wry/context" "^0.6.0"
