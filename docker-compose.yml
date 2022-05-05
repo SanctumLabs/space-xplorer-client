@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.8"
 
 services:
   db:
@@ -54,7 +54,6 @@ services:
     image: portainer/portainer
     container_name: space-xplorer-portainer
     command: -H unix:///var/run/docker.sock
-    restart: always
     ports:
       - 9000:9000
     volumes:

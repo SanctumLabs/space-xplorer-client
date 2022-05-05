@@ -27,7 +27,7 @@ RUN chmod -R 777 /usr/src/app
 RUN chmod -R 777 /usr/src/app/.pm2
 
 COPY --from=builder build build
-COPY --from=builder server .
+COPY --from=builder app .
 
 RUN npm install --quiet --no-optional
 RUN npm install pm2 -g

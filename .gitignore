@@ -105,5 +105,4 @@ dist
 build/
 /public/env-config.js
 env-config.js
-.nvmrc
 .envrc

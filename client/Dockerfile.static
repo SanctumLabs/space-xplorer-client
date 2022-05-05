@@ -24,7 +24,7 @@ FROM nginx:1.15.2-alpine
 
 # Nginx config
 RUN rm -rf /etc/nginx/conf.d
-COPY conf /etc/nginx
+COPY conf.d /etc/nginx
 
 # Static build
 COPY --from=builder /app/build /usr/share/nginx/html/

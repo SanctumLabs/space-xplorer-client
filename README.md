@@ -1,4 +1,4 @@
-# Space Xplorer Client
+# Space Xplorer
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/2ccaf6e7f5c340a89c31391094556e47)](https://www.codacy.com/gh/SanctumLabs/space-xplorer-client?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=SanctumLabs/space-xplorer-client&amp;utm_campaign=Badge_Grade)
 ![Code scanning](https://github.com/SanctumLabs/space-xplorer-client/workflows/Code%20scanning/badge.svg)
