@@ -2371,9 +2371,9 @@
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
 "@types/react-dom@*", "@types/react-dom@^16.9.0":
-  version "16.9.16"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.16.tgz#c591f2ed1c6f32e9759dfa6eb4abfd8041f29e39"
-  integrity sha512-Oqc0RY4fggGA3ltEgyPLc3IV9T73IGoWjkONbsyJ3ZBn+UPPCYpU2ec0i3cEbJuEdZtkqcCF2l1zf2pBdgUGSg==
+  version "16.9.21"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.21.tgz#4f937ae64f39c2766401750e069319224348306c"
+  integrity sha512-QdKxI502bJXRfFR8/pH0iCyt51EcPf1+hgCIZKJ9SBunj0NZpKK5j1FDoCGeGj/6ROK8gUesj41V3C64Rz2kHw==
   dependencies:
     "@types/react" "^16"
 
