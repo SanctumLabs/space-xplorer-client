@@ -2371,11 +2371,9 @@
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
 "@types/react-dom@*", "@types/react-dom@^16.9.0":
-  version "16.9.16"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.16.tgz#c591f2ed1c6f32e9759dfa6eb4abfd8041f29e39"
-  integrity sha512-Oqc0RY4fggGA3ltEgyPLc3IV9T73IGoWjkONbsyJ3ZBn+UPPCYpU2ec0i3cEbJuEdZtkqcCF2l1zf2pBdgUGSg==
-  dependencies:
-    "@types/react" "^16"
+  version "16.9.25"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.9.25.tgz#fc6440aaae3d2d3aa10f6afeb7f1b0c4a55d5e31"
+  integrity sha512-ZK//eAPhwft9Ul2/Zj+6O11YR6L4JX0J2sVeBC9Ft7x7HFN7xk7yUV/zDxqV6rjvqgl6r8Dq7oQImxtyf/Mzcw==
 
 "@types/react-helmet@^6.1.0":
   version "6.1.5"
@@ -2401,7 +2399,7 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16", "@types/react@^16.9.0":
+"@types/react@*", "@types/react@^16.9.0":
   version "16.14.39"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.39.tgz#9cfb805f1ec14aa09b505fd87c6bd5a0a460f8d6"
   integrity sha512-x7El4ktgDR1KhtMO/ytMvhGEdFt15nRiNcwKJL0rORvCNC9KDB242m6Lj/BqJ8/k4br1gmThdyHoz3fSUXZueQ==
